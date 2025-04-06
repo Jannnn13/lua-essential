@@ -24,6 +24,11 @@ The **Essential Library** is a collection of useful functions designed to simpli
   et.log("error", "This is an error.")
   ```
 
+- If you set `et.log_file`, it will not only print in the terminal but also write in the file you defined.
+- Example:
+  ```lua
+  et.log_file = "myapp.log"
+  et.log("info", "This will be written to 'myapp.log'. ")
 ### **2. Colored Output**
 - Print colored text to the terminal to highlight important information.
 - Supported colors: `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `white`.
