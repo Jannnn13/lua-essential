@@ -100,7 +100,7 @@ The **Essential Library** (v1.0) is a collection of useful functions designed to
 Here is a short example demonstrating some of the library's features:
 
 ```lua
-local et = require("libs/essential")
+local et = require("essential")
 
 et.set_title("Essential Library Demo")
 et.clear()
