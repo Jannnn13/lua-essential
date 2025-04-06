@@ -5,12 +5,8 @@ The **Essential Library** is a collection of useful functions designed to simpli
 ---
 
 ## **Installation**
-1. Download the file essential.lua and save it in your project folder, e.g., in the libs directory.
+1. Download the file `essential.lua` and save it in your project folder.
 2. Add the following line to your Lua script to use the library:
-   ```lua
-   local et = require("essential")
-   ```
-   or if you put it in a libs folder:
    ```lua
    local et = require("libs/essential")
    ```
@@ -48,3 +44,78 @@ The **Essential Library** is a collection of useful functions designed to simpli
   ```
 - **User Input**:
   ```lua
+  local name = et.input("What is your name?")
+  print("Hello, " .. name .. "!")
+  ```
+
+### **4. Terminal Control**
+- **Clear the screen**:
+  ```lua
+  et.clear()
+  ```
+- **Set the terminal title**:
+  ```lua
+  et.set_title("My Lua Application")
+  ```
+
+### **5. Time Control**
+- **Wait for a specific duration**:
+  ```lua
+  et.wait(2) -- Waits for 2 seconds
+  ```
+- **Typewriter effect for text output**:
+  ```lua
+  et.typewriter("Hello, world!", 0.1)
+  ```
+
+### **6. Random Functions**
+- **Generate random boolean values**:
+  ```lua
+  if et.random.boolean() then
+      print("Random boolean returned true")
+  else
+      print("Random boolean returned false")
+  end
+  ```
+
+### **7. Pause**
+- Wait for the user to press a key:
+  ```lua
+  et.pause("Press any key to continue...")
+  ```
+
+---
+
+## **Example**
+Here is a short example demonstrating some of the library's features:
+
+```lua
+local et = require("libs/essential")
+
+et.set_title("Essential Library Demo")
+et.clear()
+
+et.cprint("Welcome to the Essential Library Demo!", "cyan")
+et.wait(1)
+
+if et.yesno("Do you want to see a typewriter effect?") then
+    et.typewriter("This is a typewriter effect!", 0.1)
+end
+
+local name = et.input("What is your name?")
+et.cprint("Hello, " .. name .. "!", "green")
+
+et.pause("Press any key to exit...")
+```
+
+---
+
+## **Why Essential?**
+- **Simplicity**: The library is easy to understand and use.
+- **Flexibility**: It provides a variety of functions useful in many projects.
+- **No Dependencies**: The library uses only standard Lua functions and requires no external libraries.
+
+---
+
+## **License**
+The Essential Library is released under the MIT License. It can be freely used, modified, and distributed. See the `LICENSE` file for more details.
