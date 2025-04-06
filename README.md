@@ -8,7 +8,7 @@ The **Essential Library** is a collection of useful functions designed to simpli
 1. Download the file `essential.lua` and save it in your project folder.
 2. Add the following line to your Lua script to use the library:
    ```lua
-   local et = require("libs/essential")
+   local et = require("essential")
    ```
 
 ---
