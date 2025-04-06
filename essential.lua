@@ -1,5 +1,5 @@
 -- Essential Library
--- Copyright (c) 2025 Jannik Schnoor
+-- Copyright (c) 2025 Jannnn13
 -- Licensed under the MIT License. See LICENSE file for details.
 
 -- This library is a collection of essential functions for Lua programming.
