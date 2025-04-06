@@ -2,6 +2,10 @@
 -- Copyright (c) 2025 Jannik Schnoor
 -- Licensed under the MIT License. See LICENSE file for details.
 
+-- This library is a collection of essential functions for Lua programming.
+-- It includes functions for logging, color printing, waiting, random boolean generation,
+-- user input, and more. The library is designed to be easy to use and can be included in any Lua project.
+
 -- You can use this library by putting it in your project folder and put this line in your code:
 -- local et = require("essential")
 
