@@ -1,6 +1,6 @@
 # **Essential Library**
 
-The **Essential Library** is a collection of useful functions designed to simplify Lua programming. It provides tools for logging, colored terminal output, user interaction, time control, and more. The library is lightweight, easy to use, and ideal for small to medium-sized Lua projects.
+The **Essential Library** (v1.0) is a collection of useful functions designed to simplify Lua programming. It provides tools for logging, colored terminal output, user interaction, time control, and more. The library is lightweight, easy to use, and ideal for small to medium-sized Lua projects.
 
 ---
 
