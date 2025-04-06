@@ -2,6 +2,7 @@
 -- Copyright (c) 2025 Jannnn13
 -- Licensed under the MIT License. See LICENSE file for details.
 
+
 -- This library is a collection of essential functions for Lua programming.
 -- It includes functions for logging, color printing, waiting, random boolean generation,
 -- user input, and more. The library is designed to be easy to use and can be included in any Lua project.
@@ -11,6 +12,7 @@
 
 local et = {}
 et.random = {}
+et.version = "1.0"
 
 et.colors = {
     red = "\27[31m",
