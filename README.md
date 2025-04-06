@@ -5,8 +5,13 @@ The **Essential Library** (v1.0) is a collection of useful functions designed to
 ---
 
 ## **Installation**
-1. Download the file `essential.lua` and save it in your project folder.
-2. Add the following line to your Lua script to use the library:
+1. Download the file `essential.lua` by running this command:
+   ```bash
+   curl -o essential.lua https://raw.githubusercontent.com/Jannnn13/lua-essential/main/essential.lua
+   ```
+
+2. Move the file to your projects folder.
+3. Add the following line to your Lua script to use the library:
    ```lua
    local et = require("essential")
    ```
