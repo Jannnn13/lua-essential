@@ -1,131 +1,60 @@
-# **Essential Library**
+# Essential Library for Lua (v1.1)
 
-The **Essential Library** (v1.0) is a collection of useful functions designed to simplify Lua programming. It provides tools for logging, colored terminal output, user interaction, time control, and more. The library is lightweight, easy to use, and ideal for small to medium-sized Lua projects.
+**Essential** is a lightweight and easy-to-use library for Lua that provides a collection of useful functions to simplify common programming tasks. It includes features like logging, colored console output, user input handling, random utilities, and more.
 
----
+## Features
 
-## **Installation**
-1. Download the file `essential.lua` by running this command:
-   ```bash
-   curl -o essential.lua https://raw.githubusercontent.com/Jannnn13/lua-essential/main/essential.lua
-   ```
+- **Logging**: Log messages with different levels (info, warning, error) and optional colored output.
+- **Colored Console Output**: Print messages in various colors using ANSI escape codes.
+- **User Input**: Handle yes/no prompts and general user input easily.
+- **Random Utilities**: Generate random booleans and more.
+- **Console Management**: Clear the console, set the console title, and create typewriter effects.
+- **Timing Utilities**: Measure execution time and create delays.
 
-2. Move the file to your projects folder.
-3. Add the following line to your Lua script to use the library:
-   ```lua
-   local et = require("essential")
-   ```
+## Installation
 
----
+1. Download the Essential library using this command:
+```sh
+curl -o essential.lua https://raw.githubusercontent.com/Jannnn13/lua-essential/main/essential.lua
+```
 
-## **Features**
-### **1. Logging**
-- Write formatted log messages to the console or a file.
-- Supports different log types: `info`, `warn`, `error`.
-- Example:
-  ```lua
-  et.log("info", "This is an informational message.")
-  et.log("warn", "This is a warning.")
-  et.log("error", "This is an error.")
-  ```
-
-- If you set `et.log_file`, it will not only print in the terminal but also write in the file you defined.
-- Example:
-  ```lua
-  et.log_file = "myapp.log"
-  et.log("info", "This will be written to 'myapp.log'. ")
-### **2. Colored Output**
-- Print colored text to the terminal to highlight important information.
-- Supported colors: `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `white`.
-- Example:
-  ```lua
-  et.cprint("This is a red message", "red")
-  et.cprint("This is a green message", "green")
-  ```
-
-### **3. User Interaction**
-- **Yes/No Prompts**:
-  ```lua
-  if et.yesno("Do you want to continue?") then
-      print("User said yes!")
-  else
-      print("User said no!")
-  end
-  ```
-- **User Input**:
-  ```lua
-  local name = et.input("What is your name?")
-  print("Hello, " .. name .. "!")
-  ```
-
-### **4. Terminal Control**
-- **Clear the screen**:
-  ```lua
-  et.clear()
-  ```
-- **Set the terminal title**:
-  ```lua
-  et.set_title("My Lua Application")
-  ```
-
-### **5. Time Control**
-- **Wait for a specific duration**:
-  ```lua
-  et.wait(2) -- Waits for 2 seconds
-  ```
-- **Typewriter effect for text output**:
-  ```lua
-  et.typewriter("Hello, world!", 0.1)
-  ```
-
-### **6. Random Functions**
-- **Generate random boolean values**:
-  ```lua
-  if et.random.boolean() then
-      print("Random boolean returned true")
-  else
-      print("Random boolean returned false")
-  end
-  ```
-
-### **7. Pause**
-- Wait for the user to press a key:
-  ```lua
-  et.pause("Press any key to continue...")
-  ```
-
----
-
-## **Example**
-Here is a short example demonstrating some of the library's features:
+2. Place the `essential.lua` file in your project directory.
+3. Require the library in your Lua script:
 
 ```lua
 local et = require("essential")
-
-et.set_title("Essential Library Demo")
-et.clear()
-
-et.cprint("Welcome to the Essential Library Demo!", "cyan")
-et.wait(1)
-
-if et.yesno("Do you want to see a typewriter effect?") then
-    et.typewriter("This is a typewriter effect!", 0.1)
-end
-
-local name = et.input("What is your name?")
-et.cprint("Hello, " .. name .. "!", "green")
-
-et.pause("Press any key to exit...")
 ```
 
----
+## Why should you use Essential?
+- Essential is lightweight and completely written in Lua, requiring no external dependencies.
+- It simplifies coding by providing ready-to-use functions for common tasks.
+- You can include it directly in your project folder, and users of your project don't need to install Essential separately.
+- Essential is easy to use and highly beginner-friendly.
 
-## **Why Essential?**
-- **Simplicity**: The library is easy to understand and use.
-- **Flexibility**: It provides a variety of functions useful in many projects.
-- **No Dependencies**: The library uses only standard Lua functions and requires no external libraries.
+## Example
+Here's an example (you can find a bigger example in the [essential_example.lua](./essential_example.lua) file):
+```lua
+local et = require(essential)
+et.clear()
+et.log_file = "log_example.et"
+et.log("info", "This is an informational message.")
+et.log("warn", "This is a warning message.")
+et.log("error", "This is an error message.")
+et.wait(5)
 
----
+if et.yesno("Do you like Lua?") then
+    et.cprint("That's great!", "green")
+else
+    et.cprint("That's bad.", "red")
+end
 
-## **License**
-The Essential Library is released under the MIT License. It can be freely used, modified, and distributed. See the `LICENSE` file for more details.
+et.typewriter("This is a typewriter effect.", 0.08)
+```
+
+## Author
+Created by **Jannnn13** in 2025 (04.05)
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
+<img src="https://raw.githubusercontent.com/Jannnn13/Jannnn13/output/snake.svg" alt="Snake animation" />
