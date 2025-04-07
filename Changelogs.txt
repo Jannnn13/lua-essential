@@ -6,4 +6,5 @@ Added New function et.timer(func())
 Updated README.md
 Added Essential Wiki
 Added a lot of comments to the code
+Added New function et.pause(message)
 In the logging function (et.log()), when it logs to the file it also will write the date and time to it
