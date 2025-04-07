@@ -1,2 +1,8 @@
-Essential 1.0:
+Essential 1.0 (2025-4-5):
 The Normal Version of Essential
+
+Essential 1.1 (2025-7-5):
+Added New function et.timer(func())
+Updated README.md
+Added Essential Wiki
+Added a lot of comments to the code
