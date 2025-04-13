@@ -12,6 +12,7 @@
 - **Timing Utilities**: Measure execution time and create delays.
 - **File System Utilities**: Make changes to the filesystem.
 - **Useless "Fun" functions**: Some stupid functions that are completly useless.
+- **Base64 Utilities**: Base64 Encryption and Decryption.
 
 ## Installation
 
