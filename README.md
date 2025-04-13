@@ -1,4 +1,4 @@
-# Essential Library for Lua (v1.1)
+# Essential Library for Lua (v1.2)
 
 **Essential** is a lightweight and easy-to-use library for Lua that provides a collection of useful functions to simplify common programming tasks. It includes features like logging, colored console output, user input handling, random utilities, and more. See the [Wiki](https://github.com/Jannnn13/lua-essential/wiki/Essential-Wiki)!
 
