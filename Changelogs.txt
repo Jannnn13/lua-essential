@@ -1,7 +1,7 @@
 Essential 1.0 (2025-4-4):
 The Normal Version of Essential
 
-Essential 1.1 (2025-7-4):
+Essential 1.1 (2025-4-7):
 Added New function et.timer(func())
 Updated README.md
 Added Essential Wiki
@@ -9,7 +9,7 @@ Added a lot of comments to the code
 Added New function et.pause(message)
 In the logging function (et.log()), when it logs to the file it also will write the date and time to it
 
-Essential 1.2 (2025-13-4):
+Essential 1.2 (2025-4-13):
 Added Filesystem functions
 Added Base64 encryption/decryption
 Added "Fun" functions
