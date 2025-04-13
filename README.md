@@ -10,6 +10,8 @@
 - **Random Utilities**: Generate random booleans and more.
 - **Console Management**: Clear the console, set the console title, and create typewriter effects.
 - **Timing Utilities**: Measure execution time and create delays.
+- **File System Utilities**: Make changes to the filesystem.
+- **Useless "Fun" functions**: Some stupid functions that are completly useless.
 
 ## Installation
 
