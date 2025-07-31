@@ -37,7 +37,7 @@ local et = require("essential")
 ## Example
 Here's an example (you can find a bigger example in the [essential_example.lua](./essential_example.lua) file):
 ```lua
-local et = require(essential)
+local et = require("essential")
 et.clear()
 et.log_file = "log_example.et"
 et.log("info", "This is an informational message.")
